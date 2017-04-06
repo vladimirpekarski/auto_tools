@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="static/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+<img alt="Logo images" height="130" width="100" src="images/logo.png" alt="Logo images">
+</div>
+<p>{{msg}}</p>
+
+%if cur_hour in range(6,10):
+    <h1>Good morning!!!</h1>
+%elif cur_hour in range(11,18):
+    <h1>Good day!!!</h1>
+%elif cur_hour in range(19,23):
+    <h1>Good evening!!!</h1>
+%else:
+    <h1>Good night!!!</h1>
+%end
+</body>
+</html>

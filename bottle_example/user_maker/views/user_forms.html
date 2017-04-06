@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        UserType:
+        <select name="user_type">
+            % for user_type in user_types:
+                <option value="{{user_type}}">{{user_type}}</option>
+            % end
+        </select>
+        Server:
+        <select name="server">
+            % for server in servers:
+                <option value="{{server}}">{{server}}</option>
+            % end
+        </select>
+        <input value="Create User" type="submit" />
+
+</select>
+</form>
+    <br />
+    <textarea cols="60" rows="20">
+    </textarea>
+</body>
+</html>
